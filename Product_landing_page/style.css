@@ -1,0 +1,196 @@
+body {
+    background-color: #f0ffff;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #bfd98c;
+    display: grid;
+    padding-top: 5px;
+}
+
+#logo {
+    grid-column: 1;
+    width: 100%;
+    align-self: center;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+#logo span {
+    color: red;
+}
+
+
+
+#nav-bar {
+    grid-column: 2;
+    align-self: center;
+    justify-self: right;
+    display: flex;
+    margin-right: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+    margin: 5px;
+}
+
+#intro #tagline{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 750px;
+    position: relative;
+    top: 40px;
+    
+
+}
+
+#features {
+    display: grid;
+    grid-template-columns: 50vw;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+#products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.product-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style:outset;
+    border-color: lightgray;
+    padding: 10px;
+}
+.product-header {
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.product-pirce {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.product-description {
+    list-style: none;
+}
+
+
+footer {
+    background-color: #f2ecd9;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+
+
+#footer-nav p {
+    grid-column: 2;
+    align-self: center;
+    justify-self: right;
+}
+
+.btn {
+    text-transform: uppercase;
+    background-color: #e6d9b3;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border-style: outset;
+    margin-bottom: 10px;
+
+}
+
+.btn:hover {
+    transform: scale(1.05);
+
+}
+
+@media(max-width: 590px) {
+     body {
+        font-size: 85%;
+     }
+
+     header {
+        grid-template-columns: 255px 1fr;
+
+     }
+
+     main {
+        top: 55px;
+     }
+     #nav-bar {
+        flex-direction: column;
+        
+        
+     }
+     .nav-link {
+        margin: 2px;
+     }
+
+     #feature-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+
+     }
+
+     #products {
+         display: flex;
+         flex-direction: column;
+     }
+
+     .product-section {
+        margin-top: 10px;
+     }
+
+     footer {
+        margin-top: 70px;
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
